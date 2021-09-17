@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>sth5_sth1</title>
+  </head>
+  <body>
+    <div class="all">
+      <div class="outtertext">
+        <input type="text" id="txtText" />
+      </div>
+      <span class="sun"></span>
+      <span class="moon"></span>
+
+      <div class="videoinput">
+        <input
+          id="txtVideoInput"
+          type="file"
+          title="chọn video"
+          accept="video/*"
+        />
+      </div>
+      <div id="message"></div>
+      <div class="videoplayercontainer">
+        <video controls autoplay controlslist="nodownload"></video>
+      </div>
+      <div class="videoinfo">
+        <p>Volumn: <span id="videoVolumn">30</span></p>
+        <p>speed: <span id="videoSpeed">1.0</span></p>
+        <button id="btnFlag" type="button">Stop</button>
+      </div>
+      <div class="soundcontainer">
+        <button id="btnSoundMinus">Sound -</button>
+        <button>2</button>
+        <button>30</button>
+        <button>70</button>
+        <button id="btnSoundPlus">Sound +</button>
+      </div>
+      <div class="speedcontainer">
+        <button>0.75</button>
+        <button>normal</button>
+        <button>1.25</button>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
