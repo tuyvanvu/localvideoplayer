@@ -171,7 +171,7 @@ let counter = 0;
   let btnMoon = document.querySelector(".moon");
   btnSun.addEventListener("click", () => {
     counter++;
-    if (counter > 4) {
+    if (counter > 13) {
       counter = 0;
       alert("Ấn ít thôi");
     }
@@ -179,13 +179,15 @@ let counter = 0;
       btnSun.classList.remove("hidestuff");
       btnMoon.classList.add("hidestuff");
     } else {
+      document.querySelector(".all").style.backgroundColor = "#203040";
+      document.body.style.backgroundColor = "#121312";
       btnMoon.classList.remove("hidestuff");
       btnSun.classList.add("hidestuff");
     }
   });
   btnMoon.addEventListener("click", () => {
     counter++;
-    if (counter > 4) {
+    if (counter > 13) {
       counter = 0;
       alert("Ấn ít thôi");
     }
@@ -193,6 +195,9 @@ let counter = 0;
       btnMoon.classList.remove("hidestuff");
       btnSun.classList.add("hidestuff");
     } else {
+      document.body.style.backgroundColor = "rgb(96, 189, 3)";
+      document.querySelector(".all").style.backgroundColor = "lawngreen";
+
       btnSun.classList.remove("hidestuff");
       btnMoon.classList.add("hidestuff");
     }
