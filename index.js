@@ -18,6 +18,7 @@ let thayvideo = 0;
     var message = file.name;
     var isError = canPlay === "no";
     displayMessage(message, isError);
+    document.head.title = message;
 
     if (isError) {
       return;
